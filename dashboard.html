@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Choose Assessment</h2>
+
+<div class="card">
+  <a href="#depression">Depression Test</a>
+</div>
+
+<div class="card">
+  <a href="#iq">IQ Test (Timer Based)</a>
+</div>
+
+<hr>
+
+<!-- Depression Test -->
+<div id="depression">
+<h3>Depression Screening</h3>
+
+<select id="q1">
+<option value="0">Not at all</option>
+<option value="1">Several days</option>
+<option value="2">More than half</option>
+<option value="3">Nearly every day</option>
+</select>
+
+<br><br>
+<button onclick="calculateDepression()">Submit</button>
+
+<h3 id="result"></h3>
+</div>
+
+<hr>
+
+<!-- IQ Test -->
+<div id="iq">
+<h3>IQ Test (60 seconds)</h3>
+<div>Time left: <span id="timer">60</span></div>
+
+<p>5 + 7 = ?</p>
+<input type="number" id="iqAnswer">
+
+<br><br>
+<button onclick="submitIQ()">Submit IQ</button>
+
+<h3 id="iqResult"></h3>
+</div>
+
+<script src="scoring.js"></script>
+<script src="certificate.js"></script>
+</body>
+</html>
