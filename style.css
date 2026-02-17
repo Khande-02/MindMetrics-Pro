@@ -1,11 +1,28 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f9;
-  padding: 20px;
+  font-family: Arial;
+  background: #f4f7fa;
+  margin: 30px;
 }
 
-h2 {
+h1 {
   text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #1f4e79;
+  font-weight: bold;
 }
 
 .question {
@@ -13,17 +30,24 @@ h2 {
   padding: 15px;
   margin: 10px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 button {
   padding: 10px 20px;
+  background: #1f4e79;
+  color: white;
+  border: none;
+  border-radius: 5px;
   margin-top: 20px;
 }
 
 .result {
   margin-top: 20px;
-  padding: 15px;
-  background: #e8f5e9;
-  border-radius: 8px;
+  font-weight: bold;
+}
+
+.disclaimer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: red;
 }
