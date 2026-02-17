@@ -1,19 +1,11 @@
 body {
   font-family: Arial, sans-serif;
   background: #f4f6f9;
-  margin: 0;
   padding: 20px;
 }
 
-header {
+h2 {
   text-align: center;
-  margin-bottom: 20px;
-}
-
-select, button {
-  padding: 10px;
-  margin: 10px 0;
-  width: 300px;
 }
 
 .question {
@@ -21,7 +13,12 @@ select, button {
   padding: 15px;
   margin: 10px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
 }
 
 .result {
